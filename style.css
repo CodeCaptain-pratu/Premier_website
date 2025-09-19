@@ -58,6 +58,7 @@ html,body{
     width:15%;
     border-right: none;
 }
+/* center styling */
 .center{
     /* background-color: yellow; */
     width:100%;
@@ -82,6 +83,9 @@ html,body{
     position: absolute;
     bottom: 0;
     padding: 3vw;
+    background-color: rgba(0, 0, 0, 0.259);
+    backdrop-filter: blur(5px);
+    
 }
 .overlay .overlay1{
     display: flex;
@@ -112,4 +116,39 @@ html,body{
     color:#fff;
     font-size: 15px;
     font-family: sans-serif;
+}
+/* scroll styling */
+.scroll{
+    width:100%;
+    height:40vh;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.container{
+    height:100%;
+    width:110%;
+    display: inline-block;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.container img{
+    /* display: none; */
+    height:70%;
+    border-radius: 50%;
+    width:13%;
+    object-fit: cover;
+    object-position: top;
+    margin:2vw;
+
+}
+@keyframes anime{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
 }
