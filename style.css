@@ -15,6 +15,7 @@ html,body{
     padding: 0.1px;
     position: relative;
 }
+/* nav styling */
 .nav{
     width:100%;
     height:100px;
@@ -58,6 +59,20 @@ html,body{
     width:15%;
     border-right: none;
 }
+/* media queries for navbar */
+@media(max-width:576px){
+    .nav .hide{
+        display: none;
+    }
+}
+@media(max-width:768px){
+    .nav h1{
+        font-size: 23px;
+    }
+    .nav h2{
+        font-size: 15px;
+    }
+}
 /* center styling */
 .center{
     /* background-color: yellow; */
@@ -77,28 +92,27 @@ html,body{
     height:100%;
     object-fit: cover;
 }
-.center .overlay{
+.center .content .overlay{
     width:100%;
-    height:40%;
     position: absolute;
     bottom: 0;
-    padding: 3vw;
+    padding: 2vw;
     background-color: rgba(0, 0, 0, 0.259);
     backdrop-filter: blur(5px);
-    
 }
 .overlay .overlay1{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5vw;
+    /* background-color: yellow; */
 }
 .overlay .overlay1 h1{
     font-family: monument;
     color:#fff;
 }
 .overlay .overlay1 h6{
-    font-size: 2vw;
+    font-size: 1.5vw;
     color:#fff;
     padding: 1vw;
     border:2px solid;
@@ -111,12 +125,95 @@ html,body{
     align-items: center;
     border-top: 2px solid #fff;
     padding: 1.5vw;
+    /* background-color: orange; */
 }
 .overlay .overlay2 h1{
     color:#fff;
-    font-size: 15px;
+    font-size: 21px;
     font-family: sans-serif;
 }
+/* media queries for center */
+@media(max-width:576px){
+    .center .content .overlay{
+        height: 30vh;
+        padding: 3.5vw;
+    }
+    .center .content .overlay .overlay1 h6{
+        font-size: 4vw;
+        padding: 2vw;
+    }
+     .center .content .overlay .overlay1 h1{
+        font-size: 1.8rem;
+     }
+    .center .content .overlay .overlay2 h1{
+        font-size: 16px;
+    }
+}
+@media(max-width:768px){
+   .center .content .overlay{
+        height: 30vh;
+        padding: 3.5vw;
+    }
+    .center .content .overlay .overlay1 h6{
+        font-size: 3.5vw;
+        padding:1.9vw;
+    }
+     .center .content .overlay .overlay1 h1{
+        font-size: 2rem;
+     }
+    .center .content .overlay .overlay2 h1{
+        font-size: 17px;
+    } 
+}
+@media(max-width:992px){
+   .center .content .overlay{
+        height: 35vh;
+        padding: 3.5vw;
+    }
+    .center .content .overlay .overlay1 h6{
+        font-size: 3vw;
+        padding:1.5vw;
+    }
+     .center .content .overlay .overlay1 h1{
+        font-size: 2rem;
+     }
+    .center .content .overlay .overlay2 h1{
+        font-size: 19px;
+    } 
+}
+@media(max-width:1200px){
+   .center .content .overlay{
+        height: 40vh;
+        padding: 3.4vw;
+    }
+    .center .content .overlay .overlay1 h6{
+        font-size: 2.5vw;
+        padding:1.5vw;
+    }
+     .center .content .overlay .overlay1 h1{
+        font-size: 2rem;
+     }
+    .center .content .overlay .overlay2 h1{
+        font-size: 17px;
+    } 
+}
+@media(min-width:1201px){
+    .center .content .overlay{
+        height: 40vh;
+        padding: 3.4vw;
+    }
+    .center .content .overlay .overlay1 h6{
+        font-size: 2vw;
+        padding:1vw;
+    }
+     .center .content .overlay .overlay1 h1{
+        font-size: 2rem;
+     }
+    .center .content .overlay .overlay2 h1{
+        font-size: 17px;
+    } 
+}
+
 /* scroll styling */
 .scroll{
     width:100%;
@@ -150,5 +247,53 @@ html,body{
     }
     100%{
         transform: translateX(-100%);
+    }
+}
+/* media queries for scroll */
+@media(max-width:576px){
+    .container{
+        height:100%;
+        width:135%;
+        /* background-color: blue; */
+    }
+    .scroll .container img{
+        height:35%;
+    }
+}
+@media(max-width:768px){
+    .container{
+        height:100%;
+        width:115%;
+        /* background-color: blue; */
+    }
+    .scroll .container img{
+        height: 55%;
+    }
+}
+@media(max-width:992px){
+    container{
+        height:100%;
+        width:120%;
+    }
+    .scroll .container img{
+        height: 60%;
+    }
+}
+@media(max-width:1200px){
+    container{
+        height:100%;
+        width:120%;
+    }
+    .scroll .container img{
+        height: 65%;
+    }
+}
+@media(max-width:1200px){
+    container{
+        height:100%;
+        width:110%;
+    }
+    .scroll .container img{
+        height: 70%;
     }
 }
