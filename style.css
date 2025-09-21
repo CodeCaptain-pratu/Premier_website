@@ -137,7 +137,138 @@ html,body{
     font-family: sans-serif;
 }
 /* media queries for center */
-
+@media(max-width:380px){
+    .center .content .overlay{
+        height:30%;
+    }
+    .center .content .overlay .overlay1{
+       padding: 2vw 4vw;
+    }
+    .center .content .overlay .overlay1 h1{
+        /* background-color: red; */
+        font-size: 1.5rem;
+    }
+    .center .content .overlay .overlay1 h6{
+        font-size: 1.7rem;
+        padding: 0.7rem;
+    }
+    .center .content .overlay .overlay2{
+       padding: 2vw 4vw;
+    }
+    .center .content .overlay .overlay2 h1{
+       font-size: 1rem;
+    }
+}
+@media(max-width:576px){
+    .center .content .overlay{
+        height:30%;
+    }
+    .center .content .overlay .overlay1{
+       padding: 2vw 4vw;
+    }
+    .center .content .overlay .overlay1 h1{
+        /* background-color: red; */
+        font-size: 1.5rem;
+    }
+    .center .content .overlay .overlay1 h6{
+        font-size: 1.7rem;
+        padding: 0.7rem;
+    }
+    .center .content .overlay .overlay2{
+       padding: 2vw 4vw;
+    }
+    .center .content .overlay .overlay2 h1{
+       font-size: 1rem;
+    }
+}
+@media(max-width:768px){
+    .center .content .overlay{
+        height:30%;
+    }
+    .center .content .overlay .overlay1{
+       padding: 2vw 4vw;
+    }
+    .center .content .overlay .overlay1 h1{
+        /* background-color: red; */
+        font-size: 1.5rem;
+    }
+    .center .content .overlay .overlay1 h6{
+        font-size: 1.7rem;
+        padding: 0.7rem;
+    }
+    .center .content .overlay .overlay2{
+       padding: 2vw 4vw;
+    }
+    .center .content .overlay .overlay2 h1{
+       font-size: 1rem;
+    }
+}
+@media(max-width:992px){
+    .center .content .overlay{
+        height:35%;
+    }
+    .center .content .overlay .overlay1{
+       padding: 2vw 4vw;
+    }
+    .center .content .overlay .overlay1 h1{
+        /* background-color: red; */
+        font-size: 1.7rem;
+    }
+    .center .content .overlay .overlay1 h6{
+        font-size: 1.7rem;
+        padding: 0.7rem;
+    }
+    .center .content .overlay .overlay2{
+       padding: 2vw 4vw;
+    }
+    .center .content .overlay .overlay2 h1{
+       font-size: 1.1rem;
+    }
+}
+@media(max-width:1200px){
+    .center .content .overlay{
+        height:35%;
+    }
+    .center .content .overlay .overlay1{
+       padding: 2vw 4vw;
+    }
+    .center .content .overlay .overlay1 h1{
+        /* background-color: red; */
+        font-size: 1.7rem;
+    }
+    .center .content .overlay .overlay1 h6{
+        font-size: 1.7rem;
+        padding: 0.7rem;
+    }
+    .center .content .overlay .overlay2{
+       padding: 2vw 4vw;
+    }
+    .center .content .overlay .overlay2 h1{
+       font-size: 1.1rem;
+    }
+}
+@media(min-width:1201px){
+    .center .content .overlay{
+        height:35%;
+    }
+    .center .content .overlay .overlay1{
+       padding: 2vw 4vw;
+    }
+    .center .content .overlay .overlay1 h1{
+        /* background-color: red; */
+        font-size: 1.7rem;
+    }
+    .center .content .overlay .overlay1 h6{
+        font-size: 1.7rem;
+        padding: 0.7rem;
+    }
+    .center .content .overlay .overlay2{
+       padding: 2vw 4vw;
+    }
+    .center .content .overlay .overlay2 h1{
+       font-size: 1.1rem;
+    }
+}
 /* scroll styling */
 .scroll{
     width:100%;
